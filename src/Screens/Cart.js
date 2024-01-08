@@ -20,6 +20,7 @@ import Orderplaced from "./Orderplaced";
 import Details from "./Details";
 import { Ionicons } from "@expo/vector-icons";
 import Home from "./Home";
+import BottomNavigator from "../navigation/BottomNavigator";
 
 const Cart = () => {
   const nav = useNavigation();
@@ -159,7 +160,7 @@ const Cart = () => {
         />
       </View>
       {/* </ScrollView > */}
-      <View style={{ flex: 0.9, justifyContent: "flex-end" }}>
+      <View style={{ flex: 1, justifyContent: "flex-end" }}>
         <TouchableOpacity
           onPress={() => {
             nav.navigate(Orderplaced);
@@ -177,8 +178,10 @@ const Cart = () => {
           </Text>
         </TouchableOpacity>
       </View>
-     
+
+
     </SafeAreaView>
+
   );
 };
 

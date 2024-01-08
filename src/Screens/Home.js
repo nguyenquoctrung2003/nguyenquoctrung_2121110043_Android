@@ -6,7 +6,9 @@ import HomeSearch from "../Components/HomeSearch";
 import HomeBanner from "../Components/HomeBanner";
 import ProductsTile from "../Components/ProductsTile";
 import ProductsCarousel from "../Components/ProductsCarousel";
-import { fruits, vegetables } from "../Utils/Date";
+import { fruits, vegetables,iPad } from "../Utils/Date";
+import BottomNavigator from "../navigation/BottomNavigator";
+import HomeSlider from "../Components/HomeSilder";
 
 
 const Home = () => {
@@ -18,11 +20,15 @@ const Home = () => {
       <HomeBanner/>
       <ProductsTile title="IPhone Pro Max"/>
       <ProductsCarousel data={fruits}/>
-      <ProductsTile title="AirPods                "/>
-      <ProductsCarousel data={vegetables}/>
-
+      <ProductsTile title="AirPods                 "/>
+      <ProductsCarousel data={vegetables}/>  
+      <HomeSlider/>
+      <ProductsTile title="iPad                         "/>  
+      <ProductsCarousel data={iPad}/> 
     </SafeAreaView>
+
     </ScrollView>
+    
   );
 };
 export default Home;

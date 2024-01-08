@@ -70,3 +70,30 @@ export const Dropdown = [
   },
   
 ];
+
+export const iPad = [
+  {
+    name: "iPad",
+    pieces: "10",
+    price: 1.999,
+    img: "https://th.bing.com/th/id/OIP.h2GgUIidKwF-QSubwOqWgAHaHa?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+  },
+  {
+    name: "Apple iPad 4G",
+    pieces: "4",
+    price: 4.939,
+    img: "https://th.bing.com/th/id/OIP._yZecKKUDL7-HmluG0oq3wHaId?w=208&h=238&c=7&r=0&o=5&dpr=2&pid=1.7",
+  },
+  {
+    name: "iPad",
+    pieces: "7",
+    price: 4.999,
+    img: "https://tse4.mm.bing.net/th?id=OIP.8lbjTyE_NOxDktqpvI3luQHaIO&pid=Api&P=0&h=220",
+  },
+  {
+    name: "iPad",
+    pieces: "5",
+    price: 4.999,
+    img: "https://tse1.mm.bing.net/th?id=OIP.JpAPcMb38u_W-NyOcmN7-gHaIM&pid=Api&P=0&h=220",
+  },
+];
