@@ -11,21 +11,6 @@
 
 
 // const Tab =createBottomTabNavigator();
-// const screeeOptions={
-//   tabBarShowLabel:false,
-//   headerShown:false,
- 
-//   tabBarStyle:{
-//     position:"absolute",
-//     bottom:0,
-//     right:0,
-//     slevation:0,
-//     left:0,
-//     height:40,
-//     background:"#fff"
-//   }
-// }
-
 // const BottomNavigator = () => {
 //   return (
 
@@ -46,8 +31,6 @@
 //             </View>
 //         )} }}/>
 //         </Tab.Navigator>
-
-
 //   )
 // }
 

@@ -9,8 +9,6 @@ const HomeIcon = () => {
           height: 80,
           width: 80,
           alignSelf: "center",
-          paddingTop: 10,
-          marginTop: 10,
         }}
         source={require("../assets/logo.png")}
       />

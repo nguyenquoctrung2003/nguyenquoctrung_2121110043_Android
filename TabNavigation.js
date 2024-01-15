@@ -12,22 +12,30 @@ import { Provider } from "react-redux";
 import { Store } from "./Redux/Store";
 import Orderplaced from "./src/Screens/Orderplaced";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import { FontAwesome } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons';
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import Search from "./src/Screens/Search";
 
-const Tab = createBottomTabNavigator();
+
+const Tab = createMaterialBottomTabNavigator();
+
 export const TabNavigation = () => {
   return (
-    <Tab.Navigator initialRouteName="Home"
-    screeeOptions={{
-    headerShown:false,  
-    }} >
-     
-    
-     <Tab.Screen name="Home" component={Home} options={{headerShown: false,tabBarIcon:({focused})=>{return(
+
+
+     <Tab.Navigator initialRouteName="Home"
+  
+     labeled={false}
+    barStyle={{height:75,backgroundColor:"#FFFFFF", }}>
+     <Tab.Screen name="Home" component={Home} options={{tabBarVisible: false,tabBarIcon:({focused})=>{return(
             <View style={{alignItems:"center",justifyContent:"center"}}>
               <FontAwesome name="home" size={24} color="gray" />
+            </View>
+        )} }}/>
+        <Tab.Screen name="Search" component={Search} options={{headerShown: false,tabBarIcon:({focused})=>{return(
+            <View style={{alignItems:"center",justifyContent:"center"}}>
+         <FontAwesome name="search" size={24} color="gray" />
             </View>
         )} }}/>
         <Tab.Screen name="Cart" component={Cart} options={{headerShown: false,tabBarIcon:({focused})=>{return(
